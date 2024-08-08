@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NKBSD Locksmith & Storm Door Installation</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>NKBSD LOCKSMITH & STORM DOOR Installation</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Your Trusted Locksmith and Storm Door Experts</h2>
+            <p>Reliable, professional service for all your security and home improvement needs.</p>
+            <a href="#contact" class="btn">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>Locksmith Services</h3>
+                    <p>Emergency lockouts, lock repairs, key duplication, and more.</p>
+                    <a href="#contact" class="btn">Schedule a Service</a>
+                </div>
+                <div class="service">
+                    <h3>Storm Door Installation & Repairs</h3>
+                    <p>Professional installation of storm doors to protect and enhance your home.</p>
+                    <a href="#contact" class="btn">Get a Free Estimate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are NKBSD, a licensed locksmith and storm door installation company with years of experience.</p>
+            <p>Our mission is to provide top-notch service with a focus on customer satisfaction.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials">
+                <blockquote>
+                    <p>"Excellent service! The locksmith arrived quickly and fixed the issue in no time."</p>
+                    <footer>- John Doe</footer>
+                </blockquote>
+                <blockquote>
+                    <p>"Professional installation and great quality. Our storm door looks fantastic."</p>
+                    <footer>- Jane Smith</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <!-- Contact Us Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+        <div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> <strong>Call Us:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p><i class="fas fa-envelope"></i> <strong>Send Us an Email:</strong> <a href="mailto:info@nkbld.com">info@nkbld.com</a></p>
+        </div>
+        <p class="message-prompt">You can also send us a message directly through the form below:</p>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+            <p id="responseMessage"></p>
+        </form>
+    </div>
+</section>
+
+    <!-- Hidden Success Message -->
+    <div id="successMessage" style="display:none;">
+        <div class="container">
+            <h1>Thank You!</h1>
+            <p>Your message has been successfully sent. We will get back to you as soon as possible.</p>
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            const formData = new FormData(this);
+            
+            fetch('https://formspree.io/f/mzzpgrba', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error('Network response was not ok.');
+            })
+            .then(data => {
+                // Hide the form
+                document.getElementById('contactForm').style.display = 'none';
+                // Show the success message
+                document.getElementById('successMessage').style.display = 'block';
+            })
+            .catch(error => {
+                console.error('There was a problem with your submission:', error);
+                alert('There was a problem with your submission. Please try again.');
+            });
+        });
+    </script>
+
+        
+    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NKBSD Locksmith & Storm Door Installation. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
