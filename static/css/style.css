@@ -55,12 +55,23 @@ header nav ul li a:hover {
 
 /* Hero section styles */
 .hero {
-    background: url('/images/hero-bg.jpg') no-repeat center center/cover;
     color: #ffffff;
     text-align: center;
-    padding: 5em 1em;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/hero-bg.jpg') no-repeat center center/cover;
+    padding: 10em 1em;
+   
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../Spectrum-Full-view_291_Coal-Black-1275x681.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 50vh; /* Adjust based on preference */
+}
+
 
 .hero h2 {
     font-size: 2.5em;
@@ -316,4 +327,103 @@ footer p {
     font-size: 1.2em;
     text-align: center;
     color: #004080;
+}
+
+/* Phones (portrait) */
+@media (max-width: 767px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    header nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .services-grid {
+        flex-direction: column;
+    }
+
+    .service {
+        margin-bottom: 1em;
+    }
+
+    .hero {
+        padding: 5em 1em;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    form {
+        padding: 1em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9em;
+    }
+}
+body {
+    font-size: 16px; /* Base font size */
+}
+
+h1 {
+    font-size: 2rem; /* Scales with base size */
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+.btn {
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+}
+
+@media (max-width: 767px) {
+    .btn {
+        padding: 0.5em 1em;
+        font-size: 0.9em;
+    }
+}
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5em;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
 }
