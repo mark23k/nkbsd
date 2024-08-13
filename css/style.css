@@ -28,6 +28,34 @@ header .container {
     padding: 0 1em;
 }
 
+/* icon pic flag */
+.icon-new-jersey {
+    width: 48px; /* Set width */
+    height: 48px; /* Set height */
+    display: inline-block; /* Ensure it aligns properly with text */
+    vertical-align: middle; /* Align with text */
+    margin-right: 0.5em; /* Space between icon and text, if needed */
+}
+.icon-new-jersey {
+    vertical-align: middle; /* Aligns the icon with the middle of the text */
+    margin-right: 0.5em; /* Spacing between the icon and text */
+}
+
+.icon-new-jersey {
+    width: 3em; /* Base size in em */
+    height: 3em; /* Base size in em */
+}
+
+@media (max-width: 768px) {
+    .icon-new-jersey {
+        width: 2em; /* Adjust size for smaller screens */
+        height: 2em; /* Adjust size for smaller screens */
+    }
+}
+
+
+
+
 header h1 {
     font-size: 1.8em;
 }
