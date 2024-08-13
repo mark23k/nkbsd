@@ -63,6 +63,8 @@ header h1 {
 header nav ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 header nav ul li {
@@ -79,6 +81,42 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #ffffff;
 }
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #003366;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1em 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
 
 /* Hero section styles */
 .hero {
@@ -315,37 +353,6 @@ footer {
 
 footer p {
     margin: 0;
-}
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        margin-top: 1em;
-    }
-
-    header nav ul li {
-        margin: 0.5em 0;
-    }
-
-    .services-grid {
-        flex-direction: column;
-    }
-
-    .service {
-        margin-bottom: 1em;
-    }
-
-    .hero h2 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
 }
 .contact-info i {
     margin-right: 0.5em;
