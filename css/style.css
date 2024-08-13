@@ -27,7 +27,6 @@ header .container {
     margin: 0 auto;
     padding: 0 1em;
 }
-
 /* icon pic flag */
 .icon-new-jersey {
     width: 48px; /* Set width */
@@ -52,7 +51,6 @@ header .container {
         height: 2em; /* Adjust size for smaller screens */
     }
 }
-
 
 
 
@@ -92,27 +90,6 @@ header nav ul li a:hover {
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #003366;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        padding: 1em 0;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-
-    .nav-toggle {
-        display: block;
-    }
-}
 
 
 /* Hero section styles */
@@ -458,32 +435,5 @@ p {
     .btn {
         padding: 0.5em 1em;
         font-size: 0.9em;
-    }
-}
-.nav-toggle {
-    display: none;
-}
-
-@media (max-width: 767px) {
-    .nav-toggle {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 1.5em;
-        color: #ffffff;
-        cursor: pointer;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 0.5em 0;
     }
 }
