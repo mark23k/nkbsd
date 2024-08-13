@@ -108,9 +108,6 @@ header nav ul li a:hover {
         display: flex;
     }
 
-    nav ul li {
-        margin: 0.5em 0;
-    }
 
     .nav-toggle {
         display: block;

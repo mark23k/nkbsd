@@ -16,7 +16,7 @@
                 NK LOCKS & DOORS
                 <img src="../nkbsd/css/pics/icons8-new-jersey-48.png" alt="New Jersey Icon" class="icon-new-jersey">
             </h1>
-            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <a href="#" class="nav-toggle">&#9776;</a>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -31,18 +31,23 @@
 
     <script>
         // scripts.js
-    document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const navToggle = document.querySelector('.nav-toggle');
             const navMenu = document.querySelector('nav ul');
 
-    navToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('active');
-    });
-});
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    console.log('Toggle button clicked');
+                    navMenu.classList.toggle('active');
+                });
+            } else {
+                console.error('Nav toggle or nav menu not found');
+            }
+        });
 
     </script>
 
-    
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
