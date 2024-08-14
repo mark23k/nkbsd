@@ -80,18 +80,37 @@ header nav ul li a:hover {
     color: #ffffff;
 }
 
-.nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    color: #ffffff;
+#menu-links {
+    display: none; /* Hide the menu initially */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Adjust based on layout */
+    background-color: #003366; /* Adjust as needed */
+    border: 1px solid #ffcc00; /* Optional for visibility */
+}
+
+.menu-toggle {
     cursor: pointer;
 }
 
+#menu-links.show {
+    display: flex; /* Show the menu when class 'show' is added */
+    flex-direction: column; /* Adjust as needed */
+}
+
 /* Responsive styles */
-
-
+@media (max-width: 767px) {
+    .menu-toggle{
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    #menu-links{
+        display: none;
+    }
+   
+}
 /* Hero section styles */
 .hero {
     color: #ffffff;
