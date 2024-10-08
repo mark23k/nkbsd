@@ -43,6 +43,12 @@ header .container {
     }
 }
 
+@media (max-width: 450px) {
+    .icon-new-jersey {
+        display: none;
+    }
+}
+
 header h1 {
     font-size: 1.8em;
 }
@@ -91,7 +97,7 @@ header nav ul li a:hover {
 @media (max-width: 767px) {
     .menu-toggle {
         display: block; /* Show toggle button on smaller screens */
-        font-size: 1.5rem;
+        font-size: 3.5rem;
         cursor: pointer;
     }
     #menu-links {
