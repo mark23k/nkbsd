@@ -135,8 +135,11 @@ img {
 
 
 .hero h2 {
-    font-size: 4.5em;
-    margin-bottom: 0.5em;
+    font-size: 5em;
+    color: #ffcc00;
+}
+.hero h3 {
+    font-size: 3.5em;
     color: #ffcc00;
 }
 
