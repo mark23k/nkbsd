@@ -418,15 +418,18 @@ footer p {
     }
 
     .hero {
-        padding: 5em 1em;
+        padding: 5em;
     }
 
     .hero h2 {
-        font-size: 1.8em;
+        font-size: 3em;
+    }
+    .hero h3 {
+        font-size: 2em;
     }
 
     .hero p {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     form {
@@ -436,6 +439,74 @@ footer p {
     .form-group input,
     .form-group textarea {
         font-size: 0.9em;
+    }
+}
+@media (max-width: 880px) {
+    .hero {
+        padding: 0.5em;
+    }
+
+    .hero h2 {
+        font-size: 4em;
+    }
+    .hero h3 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 2em;
+        padding-bottom: 0.5em;
+    }
+}
+@media (max-width: 694px) {
+    .hero {
+        padding: 0.5em;
+    }
+
+    .hero h2 {
+        font-size: 3.5em;
+    }
+    .hero h3 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 2em;
+        padding-bottom: 0.5em;
+    }
+}
+@media (max-width: 610px) {
+    .hero {
+        padding: 0.5em;
+    }
+
+    .hero h2 {
+        font-size: 3em;
+    }
+    .hero h3 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 2em;
+        padding-bottom: 0.5em;
+    }
+}
+@media (max-width: 526px) {
+    .hero {
+        padding: 0.5em;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+    .hero h3 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 2em;
+        padding-bottom: 0.5em;
     }
 }
 body {

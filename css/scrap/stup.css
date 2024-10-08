@@ -105,7 +105,7 @@ header nav ul li a:hover {
         flex-direction: column; /* Stack items vertically */
         position: absolute; /* Positioned absolutely */
         background-color: #003366; /* Adjust as needed */
-        border: 1px solid #ffcc00;  /*Optional for visibility */
+        border: 1px solid #ffcc00; /* Optional for visibility */
         z-index: 1000; /* Ensure it appears on top */
         margin-top: 270px;
         padding: 20px;
@@ -114,7 +114,6 @@ header nav ul li a:hover {
         display: flex; /* Show menu when 'show' class is added */
     }
 }
-
 /* Hero section styles */
 .hero {
     color: #ffffff;
@@ -132,21 +131,17 @@ img {
                 url('../css/pics/uptop.jpg') no-repeat center center/cover;
     width: 100%;
     height: 50vh; /* Adjust based on preference */
-    padding-top: 30px;
 }
 
 
 .hero h2 {
-    font-size: 5em;
-    color: #ffcc00;
-}
-.hero h3 {
-    font-size: 3.5em;
+    font-size: 4.5em;
+    margin-bottom: 0.5em;
     color: #ffcc00;
 }
 
 .hero p {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 1.5em;
 }
 
@@ -418,18 +413,15 @@ footer p {
     }
 
     .hero {
-        padding: 5em;
+        padding: 5em 1em;
     }
 
     .hero h2 {
-        font-size: 3em;
-    }
-    .hero h3 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .hero p {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     form {
@@ -439,74 +431,6 @@ footer p {
     .form-group input,
     .form-group textarea {
         font-size: 0.9em;
-    }
-}
-@media (max-width: 880px) {
-    .hero {
-        padding: 0.5em;
-    }
-
-    .hero h2 {
-        font-size: 4em;
-    }
-    .hero h3 {
-        font-size: 3em;
-    }
-
-    .hero p {
-        font-size: 2em;
-        padding-bottom: 0.5em;
-    }
-}
-@media (max-width: 694px) {
-    .hero {
-        padding: 0.5em;
-    }
-
-    .hero h2 {
-        font-size: 3.5em;
-    }
-    .hero h3 {
-        font-size: 3em;
-    }
-
-    .hero p {
-        font-size: 2em;
-        padding-bottom: 0.5em;
-    }
-}
-@media (max-width: 610px) {
-    .hero {
-        padding: 0.5em;
-    }
-
-    .hero h2 {
-        font-size: 3em;
-    }
-    .hero h3 {
-        font-size: 2.5em;
-    }
-
-    .hero p {
-        font-size: 2em;
-        padding-bottom: 0.5em;
-    }
-}
-@media (max-width: 526px) {
-    .hero {
-        padding: 0.5em;
-    }
-
-    .hero h2 {
-        font-size: 2.5em;
-    }
-    .hero h3 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 2em;
-        padding-bottom: 0.5em;
     }
 }
 body {
