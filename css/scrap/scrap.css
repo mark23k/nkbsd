@@ -106,6 +106,7 @@ header nav ul li a:hover {
         display: flex; /* Show menu when 'show' class is added */
     }
 }
+
 /* Hero section styles */
 .hero {
     color: #ffffff;
