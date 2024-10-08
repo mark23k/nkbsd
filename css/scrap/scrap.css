@@ -105,8 +105,10 @@ header nav ul li a:hover {
         flex-direction: column; /* Stack items vertically */
         position: absolute; /* Positioned absolutely */
         background-color: #003366; /* Adjust as needed */
-        border: 1px solid #ffcc00; /* Optional for visibility */
+        border: 1px solid #ffcc00;  /*Optional for visibility */
         z-index: 1000; /* Ensure it appears on top */
+        margin-top: 270px;
+        padding: 20px;
     }
     #menu-links.show {
         display: flex; /* Show menu when 'show' class is added */
